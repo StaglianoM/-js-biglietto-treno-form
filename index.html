@@ -14,28 +14,31 @@
         <div class="card p-4 bg-light text-dark">
             <div class="row mb-3">
                 <div class="col-md-4">
-                    <label class="mt-3">Nome Cognome</label>
-                    <input type="text" name="dati" id="nomeCognome" placeholder="Inserisci Nome Cognome">
+                    <label class="mt-3 p-2">Nome Cognome</label>
+                    <br>
+                    <input type="text" name="dati" id="nomeCognomeInput" placeholder="Inserisci Nome Cognome">
                 </div>
                 <div class="col-md-4">
-                    <label class="mt-3"> Quanti chilometri vuoi percorrere:</label>
+                    <label class="mt-3 p-2"> Quanti chilometri vuoi percorrere:</label>
                     <input type="number" id="chilometri" placeholder="Inserisci i chilometri">
+                    <br>
                     <button class="mt-3 " onclick="calcolaPrezzo()">Calcola Prezzo</button>
                     <button class="mt-3 " onclick="resetForm()">Annulla</button>
                 </div>
                 <div class="col-md-4">
-                    <label class="mt-3">Inserisci l'età del passeggero:</label>
+                    <label class="mt-3 p-2 text">Inserisci l'età del passeggero:</label>
+                    <br>
                     <input type="number" id="eta" placeholder="Inserisci l'età">
                 </div>
             </div>
         </div>
-
+        <h2 class="mt-5">IL TUO BIGLIETTO</h2>
 
         <div class="table-responsive">
             <table class="table table-bordered table-light text-dark mt-4">
                 <thead class="table-danger">
                     <tr>
-                        <th>Nome Passeggero</th>+
+                        <th>Nome Passeggero</th>
                         <th>Offerta</th>
                         <th>Carrozza</th>
                         <th>Codice CP</th>
@@ -45,7 +48,7 @@
                 <tbody>
                     <tr>
                         <td id="nomeCognome"></td>
-                        <td>Biglietto Standard</td>
+                        <td id="tipoBiglietto"></td>
                         <td id="carrozza"></td>
                         <td id="codiceCp"></td>
                         <td id="risultato"></td>
@@ -54,7 +57,7 @@
             </table>
         </div>
     </div>
-    
+
     <!-- javascript -->
     <script src="script.js"></script>
 </body>
