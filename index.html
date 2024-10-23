@@ -15,23 +15,47 @@
             <div class="row mb-3">
                 <div class="col-md-4">
                     <label class="mt-3">Nome Cognome</label>
-                    <input type="text" name="dati" id="Nome Cognome" placeholder="Inserisci Nome Cognome">
+                    <input type="text" name="dati" id="nomeCognome" placeholder="Inserisci Nome Cognome">
                 </div>
                 <div class="col-md-4">
-                    <label class="mt-3" for="chilometri">Quanti chilometri vuoi percorrere:</label>
+                    <label class="mt-3"> Quanti chilometri vuoi percorrere:</label>
                     <input type="number" id="chilometri" placeholder="Inserisci i chilometri">
-                    <button class="mt-5" onclick="calcolaPrezzo()">Calcola Prezzo</button>
-                    <button class="m-4"> Annulla </button>
+                    <button class="mt-3 " onclick="calcolaPrezzo()">Calcola Prezzo</button>
+                    <button class="mt-3 " onclick="resetForm()">Annulla</button>
                 </div>
                 <div class="col-md-4">
-                    <label class="mt-3" for="eta">Inserisci l'età del passeggero:</label>
+                    <label class="mt-3">Inserisci l'età del passeggero:</label>
                     <input type="number" id="eta" placeholder="Inserisci l'età">
                 </div>
             </div>
         </div>
-    </div>
-    <p class="mt-5" id="risultato"></p>
 
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-light text-dark mt-4">
+                <thead class="table-danger">
+                    <tr>
+                        <th>Nome Passeggero</th>+
+                        <th>Offerta</th>
+                        <th>Carrozza</th>
+                        <th>Codice CP</th>
+                        <th>Costo biglietto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="nomeCognome"></td>
+                        <td>Biglietto Standard</td>
+                        <td id="carrozza"></td>
+                        <td id="codiceCp"></td>
+                        <td id="risultato"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <!-- javascript -->
     <script src="script.js"></script>
 </body>
 

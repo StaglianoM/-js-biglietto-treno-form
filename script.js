@@ -12,5 +12,11 @@ function calcolaPrezzo() {
     }
 
     prezzoFinale = prezzoFinale.toFixed(2);
-    document.getElementById('risultato').textContent = `Il prezzo finale del biglietto è: € ${prezzoFinale}`;
+    document.getElementById('risultato').textContent = `Il prezzo è: € ${prezzoFinale}`;
+}
+
+function resetForm() {
+    document.getElementById('nomeCognome').value = '';
+    document.getElementById('chilometri').value = '';
+    document.getElementById('eta').value = '';
 }
