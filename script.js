@@ -6,7 +6,6 @@ function calcolaPrezzo() {
     
     const userName = document.getElementById('nomeCognomeInput').value;
 
-
     let prezzoFinale = prezzoBaseBiglietto;
     let tipoBiglietto = 'Biglietto Standard'; 
     
@@ -19,9 +18,8 @@ function calcolaPrezzo() {
         prezzoFinale = prezzoBaseBiglietto - (prezzoBaseBiglietto * 40 / 100);
     }
 
-
-    
     prezzoFinale = prezzoFinale.toFixed(2);
+
     document.getElementById('nomeCognome').textContent = userName;
     document.getElementById('risultato').textContent = `Il prezzo è: € ${prezzoFinale}`;
     document.getElementById('tipoBiglietto').textContent = tipoBiglietto;
@@ -29,11 +27,20 @@ function calcolaPrezzo() {
     document.getElementById('codiceCp').textContent = Math.floor(Math.random() * 9999) + 1;
 }
 
+// reset button
 function resetForm() {
-    document.getElementById('nomeCognome').value = '';
+    document.getElementById('nomeCognomeInput').value = '';
     document.getElementById('chilometri').value = '';
     document.getElementById('eta').value = '';
-    document.getElementById('carrozza').value = Math.floor(Math.random() * 8) + 1;
+    document.getElementById('carrozza').value = Math.floor(Math.random() * 9) + 1;
 }
-
-
+// sezione ticket visibile
+function SezioneTicket() {
+    const sezione = document.getElementById('ticket');
+    sezione.style.display = 'block';
+}
+// sezione ticket annulla
+function nascondiSezione() {
+    const sezione = document.getElementById('ticket');
+    sezione.style.display = 'none'; // Nascondi la sezione
+}
