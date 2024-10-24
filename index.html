@@ -20,7 +20,7 @@
                 </div>
                 <div class="col-md-4">
                     <label class="mt-3 p-2"> Quanti chilometri vuoi percorrere:</label>
-                    <input type="number" id="chilometri" placeholder="Inserisci i chilometri">
+                    <input type="number" id="chilometri" placeholder="Inserisci i chilometri" min="1">
                     <br>
                     <button class="mt-3" onclick="calcolaPrezzo(); SezioneTicket()">Calcola Prezzo</button>
                     <button class="mt-3 " onclick="resetForm(); nascondiSezione()">Annulla</button>
@@ -28,7 +28,7 @@
                 <div class="col-md-4">
                     <label class="mt-3 p-2 text">Inserisci l'età del passeggero:</label>
                     <br>
-                    <input type="number" id="eta" placeholder="Inserisci l'età">
+                    <input type="number" id="eta" placeholder="Inserisci l'età" min="0">
                 </div>
             </div>
         </div>

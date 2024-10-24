@@ -9,8 +9,8 @@ function calcolaPrezzo() {
     let prezzoFinale = prezzoBaseBiglietto;
     let tipoBiglietto = 'Biglietto Standard';
 
-    // SE km/age non è un valore numerico - Stamp Error 
-    if (isNaN(userKm) || isNaN(userAge) || !isNaN(userName.trim())) {
+    // SE km/age non è un valore numerico - se username è un numero Stamp Error 
+    if (isNaN(userKm) || isNaN(userAge) || !isNaN(userName)) {
         alert('Per favore, compila tutti i campi.');
         document.getElementById('chilometri').value = '';  
         document.getElementById('eta').value = '';  
